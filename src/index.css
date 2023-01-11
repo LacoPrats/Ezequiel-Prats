@@ -39,7 +39,6 @@ background:var(--color-bg);
 color: var(--color-white);
 line-height: 1.7;
 background: linear-gradient(180deg, #373737,#44784b,#7d7d7d,#343434);
-background-size: 100% 50%;
 animation: color 12s ease-in-out infinite;
 }
 @keyframes color{

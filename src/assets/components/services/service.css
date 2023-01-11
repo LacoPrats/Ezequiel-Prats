@@ -46,7 +46,7 @@
 }
 /*================ Meedia Queries Medium ================== */
 @media screen and (max-width:1024px) {
-    .service__container{
+    .services__container{
 grid-template-columns: 1fr 1fr;
 gap: 2rem;
     }
@@ -57,9 +57,9 @@ gap: 2rem;
   
   /*================ Meedia Queries Small ================== */
   @media screen and (max-width:600px) {
-    .service__container{
+    .services__container{
         grid-template-columns:1fr;
-        gap: 1.5rem;
+        gap: 1rem;
     }
   }
 
