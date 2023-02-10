@@ -19,7 +19,7 @@ const Portfolio = () => {
       </div>
       <h3>Gaming Zone(HTML,CSS)</h3>
   <div className="portfolio__item-cta">
-  <a href="" className='btn'>Github</a>
+  <a href=" https://lacoprats.github.io/gamingzonegit/" className='btn'>Github</a>
   <a href="" className='btn btn-primary'>Live Demo</a>
   </div>
     </article>
@@ -29,7 +29,7 @@ const Portfolio = () => {
       </div>
       <h3>Hoops World(React Ecommerce)</h3>
       <div className="portfolio__item-cta">
-  <a href="" className='btn'>Github</a>
+  <a href="https://e-prats-finalreact.vercel.app/" className='btn'>Web</a>
   <a href="" className='btn btn-primary'>Live Demo</a>
   </div>
     </article>
@@ -39,7 +39,7 @@ const Portfolio = () => {
       </div>
       <h3>Organi App(UXUI)</h3>
       <div className="portfolio__item-cta">
-  <a href="" className='btn'>Github</a>
+  <a href="https://www.behance.net/gallery/159935735/Organi" className='btn'>Behance</a>
   <a href="" className='btn btn-primary'>Live Demo</a>
   </div>
     </article>

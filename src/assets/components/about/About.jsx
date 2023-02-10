@@ -20,21 +20,21 @@
   <div className="about__cards">
     <article className='about__card'>
     <FaGithub className='about__icon'/>
-      <h5>experience</h5>
-      <small>3+ Years of Working</small>
+      <h5>Service</h5>
+      <small></small>
     </article>
     <article className='about__card'>
     <BiUser className='about__icon'/>
       <h5>Clients</h5>
-      <small>200+ worldwide</small>
+      <small></small>
     </article>
     <article className='about__card'>
     <HiOutlineFolderOpen className='about__icon'/>
       <h5>Projects</h5>
-      <small>80+ completed</small>
+      <small></small>
     </article>
   </div>
-  <p>I'm a Designer with knowledge in areas such as FrontEnd, UXUI and Unreal Engine. I have a good eye and knowledge to be able to perform to the best of my abilities</p>
+  <p className='info1'>I'm a proactive, social person who likes to take on a challenge and is constantly looking for self-improvement. Having worked on both websites and mobile apps, I have a well-rounded understanding of design, user experience, and front-end development. I have a good understanding of how to combine the visual and the functional to give the user the best experience possible.</p>
   <a href="#contact" className='btn btn-primary'>Lets Talk</a>
 </div>
       </div>
