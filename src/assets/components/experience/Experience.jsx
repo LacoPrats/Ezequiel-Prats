@@ -74,6 +74,15 @@ const Experience = () => {
             <h4>UXUI</h4>
             <small className='text-light'>Experienced</small>
             </div>
+            
+          </article>
+          <article className='experience__details'>
+            <AiFillCheckCircle className='experience__detail-icon'/>
+            <div>
+            <h4>Blender</h4>
+            <small className='text-light'>Experienced</small>
+            </div>
+            
           </article>
         </div>
       </div>

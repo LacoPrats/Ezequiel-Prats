@@ -1,7 +1,7 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/imag/project2.jpg'
-import IMG2 from '../../assets/imag/project1.jpg'
+import IMG1 from '../../assets/imag/bcharq.png'
+import IMG2 from '../../assets/imag/hoopsworlds2.png'
 import IMG3 from '../../assets/imag/proyect3.jpg'
 import IMG4 from '../../assets/imag/project4.jpg'
 import IMG5 from '../../assets/imag/project5.jpg'
@@ -17,7 +17,7 @@ const Portfolio = () => {
       <div className="portfolio item__imag">
         <img src={IMG1} alt="" />
       </div>
-      <h3>Gaming Zone(HTML,CSS)</h3>
+      <h3>BCH Arquitectura(Client)</h3>
   <div className="portfolio__item-cta">
   <a href=" https://lacoprats.github.io/gamingzonegit/" className='btn'>Github</a>
   <a href="" className='btn btn-primary'>Live Demo</a>
