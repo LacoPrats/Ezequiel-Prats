@@ -9,7 +9,7 @@ const Experience = () => {
     <h2>My Experience</h2>
     <div className="container experience__container">
       <div className="experience_frontend">
-        <h3>Frontend Development</h3>
+        <h3>FrontEnd Development</h3>
         <div className="experience__content">
           <article className='experience__details'>
             <AiFillCheckCircle className='experience__detail-icon'/>
@@ -54,7 +54,7 @@ const Experience = () => {
       <div className="experience_designer">
       <h3>Designer</h3>
         <div className="experience__content">
-          <article className='experience__details'>
+        <article className='experience__details'>
             <AiFillCheckCircle className='experience__detail-icon'/>
             <div>
             <h4>Illustrator</h4>
@@ -71,30 +71,37 @@ const Experience = () => {
           <article className='experience__details'>
             <AiFillCheckCircle className='experience__detail-icon'/>
             <div>
-            <h4>UXUI</h4>
+            <h4>Figma</h4>
             <small className='text-light'>Experienced</small>
-            </div>
-            
+            </div>      
           </article>
           <article className='experience__details'>
             <AiFillCheckCircle className='experience__detail-icon'/>
             <div>
             <h4>Blender</h4>
             <small className='text-light'>Experienced</small>
-            </div>
-            
+            </div>      
           </article>
-        </div>
-      </div>
-      <div className="experience_designer">
-      <h3>GAME Development</h3>
-        <div className="experience__content">
           <article className='experience__details'>
             <AiFillCheckCircle className='experience__detail-icon'/>
-           <div>
-           <h4>Unreal</h4>
+            <div>
+            <h4>Touch Designer</h4>
             <small className='text-light'>Experienced</small>
-           </div>
+            </div>      
+          </article>
+          <article className='experience__details'>
+            <AiFillCheckCircle className='experience__detail-icon'/>
+            <div>
+            <h4>After Effect</h4>
+            <small className='text-light'>Experienced</small>
+            </div>      
+          </article>
+          <article className='experience__details'>
+            <AiFillCheckCircle className='experience__detail-icon'/>
+            <div>
+            <h4>Resoulume Alley/Arena</h4>
+            <small className='text-light'>Experienced</small>
+            </div>      
           </article>
         </div>
       </div>

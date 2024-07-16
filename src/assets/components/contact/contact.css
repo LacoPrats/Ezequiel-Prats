@@ -1,63 +1,66 @@
-.container.contact__container{
+.container.contact__container {
     width: 58%;
-    display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
-}
-
-.contact__options{
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    align-items: center;
 }
-.contact__option{
-    background: var(--color-bg-variant);
+
+.contact__options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.contact__option {
+    flex: 1;
+    min-width: 250px; /* Añade un tamaño mínimo para asegurar que se mantenga un buen diseño en pantallas más pequeñas */
+    background: black;
     padding: 1.2rem;
-    border-radius: 1.2rem;
     text-align: center;
     border: 1px solid transparent;
-    transition: var(--transition);
 }
-.contact__option:hover{
+
+.contact__option:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
 }
-.contact_option-icon{
+
+.contact__option-icon {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
-.contact__option a{
+
+.contact__option a {
     margin-top: 0.7rem;
     display: inline-block;
     font-size: 0.8rem;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-input,textarea{
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: whitesmoke;
-    border: 2px solid#00e988;
-    resize: none;
-    color: black
+/*================ Media Queries Medium ==================*/
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .container.contact__container {
+        width: 80%;
+    }
 }
 
-/*================ Meedia Queries Medium ================== */
-@media screen and (max-width:1024px) {
-   .container.contact__container{
-    grid-template-columns: 1fr;
-    gap: 2rem;
-   }
-  }
-  
-  /*================ Meedia Queries Small ================== */
-  @media screen and (max-width:600px) {
-    .container.contact__container{
-        width: var(--container-width-sm);
-       }
+/*================ Media Queries Small ==================*/
+@media screen and (max-width: 600px) {
+    .container.contact__container {
+        width: 100%;
+        padding: 0 1rem; /* Añade padding para mejorar la apariencia en pantallas pequeñas */
     }
+
+    .contact__options {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .contact__option-icon {
+        font-size: 1.2rem;
+    }
+
+    .contact__option a {
+        font-size: 0.7rem;
+    }
+}

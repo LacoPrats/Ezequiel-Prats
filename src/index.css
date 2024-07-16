@@ -12,8 +12,8 @@
 
 :root{
     --color-bg: #1f1f38;
-    --color-bg-variant: #00e988;
-    --color-primary: #12f189;
+    --color-bg-variant: #686868;
+    --color-primary: #ffffff;
     --color-primary-variant:rgba(77, 181,255,0.4);
     --color-white: #fff;
     --color-light:rgba(255, 255,255,0.6);
@@ -38,7 +38,7 @@ font-family: 'Lato', sans-serif;
 background:var(--color-bg);
 color: var(--color-white);
 line-height: 1.7;
-background: linear-gradient(180deg, #373737,#44784b,#7d7d7d,#343434);
+background: rgb(204, 203, 203);
 animation: color 12s ease-in-out infinite;
 }
 @keyframes color{
@@ -75,11 +75,11 @@ section{
 }
 section > h2, section > h5{
 text-align: center;
-color: var(--color-light);
+color: black;
 }
 
 section > h2{
-color: var(--color-primary);
+color: black;
 margin-bottom: 3rem;
 }
 

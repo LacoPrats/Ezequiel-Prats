@@ -1,81 +1,94 @@
-import React from 'react'
-import './portfolio.css'
-import IMG1 from '../../assets/imag/bcharq.png'
-import IMG2 from '../../assets/imag/hoopsworlds2.png'
-import IMG3 from '../../assets/imag/proyect3.jpg'
-import IMG4 from '../../assets/imag/project4.jpg'
-import IMG5 from '../../assets/imag/project5.jpg'
-import IMG6 from '../../assets/imag/proyect6.jpg'
+import React from 'react';
+import './portfolio.css';
+import IMG1 from '../../assets/imag/bcharq.png';
+import IMG2 from '../../assets/imag/hoopsworlds2.png';
+import IMG3 from '../../assets/imag/proyect3.jpg';
+import IMG4 from '../../assets/imag/astronaut.png';
+import IMG5 from '../../assets/imag/puntoycoma.png';
+import IMG6 from '../../assets/imag/proyect6.jpg';
+import IMG7 from '../../assets/imag/Ali.png';
+import IMG8 from '../../assets/imag/nft.png';
 
 const Portfolio = () => {
+  const projects = [
+    {
+      id: 1,
+      img: IMG1,
+      title: 'BCH Arquitectura(Client)',
+      info: 'Fully responsive website for BCH Arquitectura bt leveraging my design expertise, This collaborative process between the client and myself was both challenging and rewarding as we worked together to ensure the final outcome aligned with their ides and need',
+      link: 'https://www.bcharquitectura.com.ar/'
+    },
+    {
+      id: 2,
+      img: IMG2,
+      title: 'Hoops World(React Ecommerce)',
+      info: 'Personal proyect where i created and e-commerce platform. This involved developing a fully responsive website featuring a product catalog with filters for both category and price',
+      link: 'https://e-prats-finalreact.vercel.app/'
+    },
+    {
+      id: 3,
+      img: IMG3,
+      title: 'Organi App(UXUI)',
+      info: 'Organi an app to organize household chores in an orderly and effective manner. The application was developed using Figma, where through prototypes and iterations we reached this final version of the app. ',
+      behance: 'https://www.behance.net/gallery/159935735/Organi',
+      demo: 'https://www.figma.com/proto/vFxzEVRYbqUjC0t4S2EojN/Untitled?node-id=305-257&starting-point-node-id=302%3A159'
+    },
+    {
+      id: 4,
+      img: IMG5,
+      title: 'Punto Y Coma Proyect',
+      info: 'Punto y Coma was a final project where we developed a typographic event at the National Library of Buenos Aires. In this project, we created the events identity and graphics from scratch, combining design with typography, specifically ASCII art. ',
+      behance: 'https://www.behance.net/gallery/159608087/PuntoyComa'
+    },
+    {
+      id: 5,
+      img: IMG4,
+      title: 'Astronaut 8bit Audiovisual',
+      info: 'Audiovisual mapping project using the song "Fugue State" by Vulfpeck. I used an 8-bit retro game identity to create a narrative that matches the rhythm of the song. This project was carried out using After Effects and Resolume. ',
+      drive: 'https://drive.google.com/drive/folders/1bzGCH-M95ZwKp1VSi5ZcbWmrOxRyYvEA?usp=sharing',
+      link: 'https://www.youtube.com/watch?v=pVh4dL0rCSA'
+    },
+    {
+      id: 7,
+      img: IMG7,
+      title: 'Ali The Greatest',
+      info: 'A timeline recounting Ali life and his battles both inside and outside the ring. This project was created in Illustrator and Figma to provide functionality. ',
+      link: 'https://www.figma.com/proto/vLabmKSgiqI7tf1JXFINGz/Alifinal?node-id=4-217&t=9koBURdw3uNc6EaP-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A217'
+    },
+    {
+      id: 7,
+      img: IMG8,
+      title: 'Hot Dog World',
+      info: 'A playful NFT concept art exploration of art and imagination. By combining the bold, satirical style of Pop Art with the whimsical concept of a sausage-centric universe. ',
+      link: 'https://www.figma.com/proto/vLabmKSgiqI7tf1JXFINGz/Alifinal?node-id=4-217&t=9koBURdw3uNc6EaP-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A217https://www.behance.net/gallery/159748355/NFT-Concept-Art-Hot-Dog-World'
+    }
+    
+  ];
+
   return (
-<section id='portfolio'>
-  <h5>My recent work</h5>
-  <h2>Portfolio</h2>
-  <div className="container portfolio__container">
-    <article className='portfolio__item'>
-      <div className="portfolio item__imag">
-        <img src={IMG1} alt="" />
+    <section id='portfolio'>
+      <h5>My recent work</h5>
+      <h2>Portfolio</h2>
+      <div className="container portfolio__container">
+        {projects.map(({ id, img, title, info, link, behance, demo, drive, github }) => (
+          <article key={id} className="portfolio__item">
+            <div className="portfolio__item-bg" style={{ backgroundImage: `url(${img})` }}></div>
+            <div className="portfolio__item-content">
+              <h3>{title}</h3>
+              <p>{info}</p>
+              <div className="portfolio__item-cta">
+                {link && <a href={link} className='btn'>Link</a>}
+                {behance && <a href={behance} className='btn'>Behance</a>}
+                {demo && <a href={demo} className='btn btn-primary'>Live Demo</a>}
+                {drive && <a href={drive} className='btn'>Drive</a>}
+                {github && <a href={github} className='btn'>Github</a>}
+              </div>
+            </div>
+          </article>
+        ))}
       </div>
-      <h3>BCH Arquitectura(Client)</h3>
-  <div className="portfolio__item-cta">
-  <a href=" https://lacoprats.github.io/gamingzonegit/" className='btn'>Github</a>
-  <a href="" className='btn btn-primary'>Live Demo</a>
-  </div>
-    </article>
-    <article className='portfolio__item'>
-      <div className="portfolio item__image">
-        <img src={IMG2} alt="" />
-      </div>
-      <h3>Hoops World(React Ecommerce)</h3>
-      <div className="portfolio__item-cta">
-  <a href="https://e-prats-finalreact.vercel.app/" className='btn'>Web</a>
-  <a href="" className='btn btn-primary'>Live Demo</a>
-  </div>
-    </article>
-    <article className='portfolio__item'>
-      <div className="portfolio item__imag">
-        <img src={IMG3} alt="" />
-      </div>
-      <h3>Organi App(UXUI)</h3>
-      <div className="portfolio__item-cta">
-  <a href="https://www.behance.net/gallery/159935735/Organi" className='btn'>Behance</a>
-  <a href="" className='btn btn-primary'>Live Demo</a>
-  </div>
-    </article>
-    <article className='portfolio__item'>
-      <div className="portfolio item__imag">
-        <img src={IMG4} alt="" />
-      </div>
-      <h3>Hill Castle(Unreal Engine 5)</h3>
-      <div className="portfolio__item-cta">
-  <a href="" className='btn'>Github</a>
-  <a href="" className='btn btn-primary'>Live Demo</a>
-  </div>
-    </article>
-    <article className='portfolio__item'>
-      <div className="portfolio item__imag">
-        <img src={IMG5} alt="" />
-      </div>
-      <h3>Target Shooting(FPS Game)</h3>
-      <div className="portfolio__item-cta">
-  <a href="" className='btn'>Github</a>
-  <a href="" className='btn btn-primary'>Live Demo</a>
-  </div>
-    </article>
-    <article className='portfolio__item'>
-      <div className="portfolio item__imag">
-        <img src={IMG6} alt="" />
-      </div>
-      <h3>Zombie Pistol Madness(FPS Game)</h3>
-      <div className="portfolio__item-cta">
-  <a href="" className='btn'>Github</a>
-  <a href="" className='btn btn-primary'>Live Demo</a>
-  </div>
-    </article>
-  </div>
-</section>
+    </section>
   )
 }
 
-export default Portfolio
+export default Portfolio;

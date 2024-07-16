@@ -1,12 +1,12 @@
 footer{
-    background: var(--color-primary);
+    background: black;
     padding: 0.6rem 0;
     text-align: center;
     font-size: 0.9rem;
     margin-top: 7rem;
 }
 footer a{
-    color: var(--color-bg);
+    color: white;
 }
 .footer__logo{
     font-size: 2rem;
@@ -28,8 +28,8 @@ footer a{
     margin-bottom: 4rem;
 }
 .footer__socials a{
-    background: var(--color-bg);
-    color: var(--color-white);
+    background: white;
+    color: black;
     padding: 0.8rem;
     border-radius: 0.7rem;
     display: flex;
