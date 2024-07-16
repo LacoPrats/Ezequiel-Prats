@@ -90,7 +90,7 @@ header {
   /*================ Media Queries Small ================== */
   @media screen and (max-width: 600px) {
     header {
-      height: 100vh;
+      height: 80vh;
     }
     .header__container {
       flex-direction: column;
@@ -101,7 +101,8 @@ header {
       text-align: center;
     }
     .header__image {
-      margin-top: 2rem;
+   
+      display: none;
     }
     .header_socials,
     .scroll_down {
