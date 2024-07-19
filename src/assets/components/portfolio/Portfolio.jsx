@@ -8,6 +8,7 @@ import IMG5 from '../../assets/imag/puntoycoma.png';
 import IMG6 from '../../assets/imag/proyect6.jpg';
 import IMG7 from '../../assets/imag/Ali.png';
 import IMG8 from '../../assets/imag/nft.png';
+import IMG9 from '../../assets/imag/Clima.jpeg';
 
 const Portfolio = () => {
   const projects = [
@@ -19,19 +20,27 @@ const Portfolio = () => {
       link: 'https://www.bcharquitectura.com.ar/'
     },
     {
-      id: 2,
-      img: IMG2,
-      title: 'Hoops World(React Ecommerce)',
-      info: 'Personal proyect where i created and e-commerce platform. This involved developing a fully responsive website featuring a product catalog with filters for both category and price',
-      link: 'https://e-prats-finalreact.vercel.app/'
-    },
-    {
       id: 3,
       img: IMG3,
       title: 'Organi App(UXUI)',
       info: 'Organi an app to organize household chores in an orderly and effective manner. The application was developed using Figma, where through prototypes and iterations we reached this final version of the app. ',
       behance: 'https://www.behance.net/gallery/159935735/Organi',
       demo: 'https://www.figma.com/proto/vFxzEVRYbqUjC0t4S2EojN/Untitled?node-id=305-257&starting-point-node-id=302%3A159'
+    },
+    {
+      id: 3,
+      img: IMG9,
+      title: 'Clima en Movimiento',
+      info: '"Clima en movimiento" is an interactive and immersive experience where users learn about the consequences of global warming on our planet and how their actions have long-term impacts. The immersive room features projections that respond to the users actions. ',
+      behance: 'https://www.behance.net/gallery/159935735/Organi',
+      demo: 'https://www.figma.com/proto/vFxzEVRYbqUjC0t4S2EojN/Untitled?node-id=305-257&starting-point-node-id=302%3A159'
+    },
+    {
+      id: 2,
+      img: IMG2,
+      title: 'Hoops World(React Ecommerce)',
+      info: 'Personal proyect where i created and e-commerce platform. This involved developing a fully responsive website featuring a product catalog with filters for both category and price',
+      link: 'https://e-prats-finalreact.vercel.app/'
     },
     {
       id: 4,
