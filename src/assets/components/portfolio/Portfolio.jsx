@@ -32,8 +32,8 @@ const Portfolio = () => {
       img: IMG9,
       title: 'Clima en Movimiento',
       info: '"Clima en movimiento" is an interactive and immersive experience where users learn about the consequences of global warming on our planet and how their actions have long-term impacts. The immersive room features projections that respond to the users actions. ',
-      behance: 'https://www.behance.net/gallery/159935735/Organi',
-      demo: 'https://www.figma.com/proto/vFxzEVRYbqUjC0t4S2EojN/Untitled?node-id=305-257&starting-point-node-id=302%3A159'
+      link: 'https://www.youtube.com/watch?v=89y1H3mPIAs',
+      drive: 'https://drive.google.com/drive/u/0/folders/1i_ZMFxFH7E6IvlGBqQkiY4XgWhRMhkf6'
     },
     {
       id: 2,
