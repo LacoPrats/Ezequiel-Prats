@@ -19,11 +19,11 @@
     padding: 1.2rem;
     text-align: center;
     border: 1px solid transparent;
+    transition: transform 0.3s;
 }
 
 .contact__option:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
+    transform: scale(1.05);
 }
 
 .contact__option-icon {

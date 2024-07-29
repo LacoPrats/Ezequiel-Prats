@@ -50,12 +50,11 @@
     border: 1px solid transparent;
     padding: 1rem;
     width: 150px;
+    transition: transform 0.3s;
   }
   
   .about__card:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
+    transform: scale(1.05);
   }
   
   .about__icon {

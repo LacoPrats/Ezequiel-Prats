@@ -31,7 +31,7 @@ const Portfolio = () => {
       id: 3,
       img: IMG9,
       title: 'Clima en Movimiento',
-      info: '"Clima en movimiento" is an interactive and immersive experience where users learn about the consequences of global warming on our planet and how their actions have long-term impacts. The immersive room features projections that respond to the users actions. ',
+      info: '"Clima en movimiento" is an interactive and immersive experience where users learn about the consequences of global warming on our planet and how their actions have long-term impacts. The immersive room features projections that respond to the users actions. Proyect carried out with illustrator, After Effect and Touch designer ',
       link: 'https://www.youtube.com/watch?v=89y1H3mPIAs',
       drive: 'https://drive.google.com/drive/u/0/folders/1i_ZMFxFH7E6IvlGBqQkiY4XgWhRMhkf6'
     },
