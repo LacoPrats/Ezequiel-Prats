@@ -36,6 +36,14 @@ const Portfolio = () => {
       drive: 'https://drive.google.com/drive/u/0/folders/1i_ZMFxFH7E6IvlGBqQkiY4XgWhRMhkf6'
     },
     {
+      id: 4,
+      img: IMG9,
+      title: 'News Api',
+      info: '"React news app using and"A simple news app built with React and NewsAPI, featuring category filtering, search functionality, and pagination. ',
+      link: 'https://www.youtube.com/watch?v=89y1H3mPIAs',
+      drive: 'https://drive.google.com/drive/u/0/folders/1i_ZMFxFH7E6IvlGBqQkiY4XgWhRMhkf6'
+    },
+    {
       id: 2,
       img: IMG2,
       title: 'Hoops World(React Ecommerce)',
