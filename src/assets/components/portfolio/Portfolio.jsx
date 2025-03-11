@@ -9,6 +9,7 @@ import IMG6 from '../../assets/imag/proyect6.jpg';
 import IMG7 from '../../assets/imag/Ali.png';
 import IMG8 from '../../assets/imag/nft.png';
 import IMG9 from '../../assets/imag/Clima.jpeg';
+import IMG10 from '../../assets/imag/PRESENAPP.png';
 
 const Portfolio = () => {
   const projects = [
@@ -29,20 +30,20 @@ const Portfolio = () => {
     },
     {
       id: 3,
+      img: IMG10,
+      title: 'Formula 1 APP',
+      info: 'A Formula 1 app designed in Figma for the 2025 season, where you can view the race calendar, explore the teams and their lineups, and check last season’s results. ',
+      link: 'https://www.figma.com/proto/uk5aak90ZNDAYhAij3yM1r/Formula-1-App?page-id=0%3A1&node-id=1-3&p=f&viewport=1785%2C297%2C0.32&t=xj4BdCe3hpmFmOzn-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3',
+    },
+    {
+      id: 3,
       img: IMG9,
       title: 'Clima en Movimiento',
       info: '"Clima en movimiento" is an interactive and immersive experience where users learn about the consequences of global warming on our planet and how their actions have long-term impacts. The immersive room features projections that respond to the users actions. Proyect carried out with illustrator, After Effect and Touch designer ',
       link: 'https://www.youtube.com/watch?v=89y1H3mPIAs',
       drive: 'https://drive.google.com/drive/u/0/folders/1i_ZMFxFH7E6IvlGBqQkiY4XgWhRMhkf6'
     },
-    {
-      id: 4,
-      img: IMG9,
-      title: 'News Api',
-      info: '"React news app using and"A simple news app built with React and NewsAPI, featuring category filtering, search functionality, and pagination. ',
-      link: 'https://www.youtube.com/watch?v=89y1H3mPIAs',
-      drive: 'https://drive.google.com/drive/u/0/folders/1i_ZMFxFH7E6IvlGBqQkiY4XgWhRMhkf6'
-    },
+
     {
       id: 2,
       img: IMG2,
