@@ -49,7 +49,7 @@ const Portfolio = () => {
       img: IMG2,
       title: 'Hoops World(React Ecommerce)',
       info: 'Personal proyect where i created and e-commerce platform. This involved developing a fully responsive website featuring a product catalog with filters for both category and price',
-      link: 'https://e-prats-finalreact.vercel.app/'
+      link: 'https://hoops-world.vercel.app/'
     },
     {
       id: 4,
