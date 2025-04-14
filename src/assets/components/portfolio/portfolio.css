@@ -19,10 +19,12 @@
   display: flex;
   flex-direction: row;
   padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .portfolio__item:hover {
-  border-color: var(--color-primary-variant);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* ✅ Estilo para las imágenes */
