@@ -1,114 +1,149 @@
-header {
-    height: 100vh;
-    overflow: hidden;
-    background: linear-gradient(rgb(0,0,0),rgb(41, 41, 41));
+/* Hero.css */
+.header {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding: 5rem;
+}
+
+.header__text {
+  text-align: left;
+  color: white;
+  flex: 1;
+}
+
+.header__titles{
+display: flex;
+flex-direction: row;
+gap: 2rem;
+font-weight: lighter;
+}
+.header__text h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  white-space: nowrap; /* Evitar que el texto se divida en múltiples líneas */
+  overflow: hidden; /* Ocultar texto fuera del área */
+  width: 0;
+  animation: typing 1s steps(20) 1s forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  to {
+    width: 100%;
   }
-  
-  .header__container {
-    display: flex;
-    justify-content: flex-end; /* Ajusta para que el contenido esté a la derecha */
-    align-items: center;
-    height: 100%;
-    padding: 5rem; /* Espaciado interno para evitar que el contenido toque los bordes */
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
   }
-  
-  .header__text {
-    text-align: left;
-    color: white;
-    flex: 1; /* Permite que el texto ocupe el espacio restante */
+}
+
+.header__text h5 {
+  margin-bottom: 0.2rem;
+  font-size: 1.3rem;
+  color: white;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in-out 2s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
-  
+}
+
+.header__image {
+  max-width: 40%;
+  height: auto;
+  margin-left: 2rem;
+}
+
+.header__image img.header__img {
+  max-width: 100%;
+  border: 1px solid white;
+  transition: transform 0.3s;
+}
+
+.header__image img.header__img:hover {
+  transform: scale(1.05);
+}
+
+/* =============== CTA ============ */
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: flex-start;
+}
+
+/* =============== Socials ============ */
+.header_socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+
+.header_socials:after {
+  content: '';
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
+/* =============== Scroll Down ============ */
+.scroll_down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+/*================ Media Queries Medium ================== */
+@media screen and (max-width: 1024px) {
   .header__text h1 {
-    font-size:5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+    font-size: 3rem;
   }
-  
-  .header__text h5 {
-    margin-bottom: 0.2rem;
-    font-size: 1.3rem;
-    color: white;
-  }
-  
   .header__image {
-    max-width: 40%; /* Ajusta el tamaño de la imagen */
-    height: auto;
-    margin-left: 2rem; /* Espaciado entre el texto y la imagen */
+    display: none;
   }
-  
-  .header__image img.header__img {
-    max-width: 100%;
-    border: 1px solid white;
-    transition: transform 0.3s;;
-   /* Ajusta el borde redondeado según tu preferencia */
+}
+
+/*================ Media Queries Small ================== */
+@media screen and (max-width: 600px) {
+  header {
+    height: 50vh;
   }
-  .header__image img.header__img:hover {
-    transform: scale(1.05);
-  }
-  
-  /* =============== CTA ============ */
-  .cta {
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 1.2rem;
-    justify-content: flex-start;
-  }
-  
-  /* =============== Socials ============ */
-  .header_socials {
-    display: flex;
+  .header__container {
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
     align-items: center;
-    gap: 0.8rem;
-    position: absolute;
-    left: 0;
-    bottom: 3rem;
   }
-  
-  .header_socials:after {
-    content: '';
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
+  .header__text {
+    text-align: center;
   }
-  
-  /* =============== Scroll Down ============ */
+  .header__image {
+    display: none;
+  }
+  .header_socials,
   .scroll_down {
-    position: absolute;
-    right: -2.3rem;
-    bottom: 5rem;
-    transform: rotate(90deg);
-    font-weight: 300;
-    font-size: 0.9rem;
+    display: none;
   }
-  
-  /*================ Media Queries Medium ================== */
-  @media screen and (max-width: 1024px) {
-    .header__text h1 {
-      font-size: 3rem;
-    }
+  .cta{
+    justify-content: center;
   }
-  
-  /*================ Media Queries Small ================== */
-  @media screen and (max-width: 600px) {
-    header {
-      height: 80vh;
-    }
-    .header__container {
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-    }
-    .header__text {
-      text-align: center;
-    }
-    .header__image {
-   
-      display: none;
-    }
-    .header_socials,
-    .scroll_down {
-      display: none;
-    }
-  }
-  
+}

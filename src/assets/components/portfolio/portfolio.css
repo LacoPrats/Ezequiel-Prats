@@ -1,80 +1,154 @@
+/* Portfolio CSS */
 .portfolio__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    text-align: center;
+  display: grid;
+  grid-template-columns: 1fr; /* Establecer una sola columna */
+  gap: 3rem;
+  text-align: center;
+  width: 50%;
+  margin-top: 2rem;
 }
 
 .portfolio__item {
-    position: relative;
-    overflow: hidden;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(rgb(0, 0, 0), rgb(41, 41, 41));
-    transition: var(--transition);
-    box-shadow: 
-        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgb(0, 0, 0), rgb(41, 41, 41));
+  transition: var(--transition);
+  box-shadow: 
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
 }
 
 .portfolio__item:hover {
-    border-color: var(--color-primary-variant);
+  border-color: var(--color-primary-variant);
 }
 
-.portfolio__item-bg {
-    width: 100%;
-    height: 0;
-    padding-top: 56.25%; /* 16:9 aspect ratio para ser rectangulares */
-    background-size: cover; /* Asegura que la imagen cubra todo el div */
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 2px solid rgb(0, 0, 0); /* Evita que la imagen se repita */
+/* ✅ Estilo para las imágenes */
+.portfolio__item-image {
+  width: 700px;/* Ancho fijo */
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio__item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantiene proporciones sin deformar */
+  border-radius: 8px;
 }
 
 .portfolio__item-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    flex-grow: 1;
-    justify-content: space-between;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  text-align: left;
+  flex: 1;
 }
 
 .portfolio__item h3 {
-    margin: 1.2rem 0 1rem;
+  margin: 1.2rem 0 1rem;
+  font-size: 1.5rem;
+  width: 100%;
 }
 
 .portfolio__item p {
-    flex-grow: 1;
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    text-align: left;
+  font-size: 1rem;
+  color: #d4d4d4;
+  flex-grow: 1;
+  margin-bottom: 1rem;
 }
 
 .portfolio__item-cta {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.link-icon {
+  margin-left: 0.4rem;
+  font-size: 1rem;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
 }
 
+a.btn:hover .link-icon {
+  transform: translateX(2px);
+}
 .btn {
-    background-color: rgb(76, 76, 76);
+  background-color: rgb(76, 76, 76);
+}
+#portfolio{
+  margin-top: 12rem;
+  text-align: center;
 }
 
-/* Media Queries */
-@media screen and (max-width: 1024px) {
-    .portfolio__container {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
-    }
+@media screen and (min-width: 601px) and (max-width: 1100px) {
+  .portfolio__container {
+    width: 90%;
+    gap: 2rem;
+  }
+
+  .portfolio__item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio__item-image {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 1rem;
+  }
+
+  .portfolio__item-content {
+    text-align: left;
+    padding: 0.5rem;
+  }
+
+  .portfolio__item h3 {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+  }
+
+  .portfolio__item p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  .portfolio__item-cta {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+  #portfolio{
+    margin-top: 2rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .portfolio__container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
+  .portfolio__container {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio__item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio__item-image {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 1rem;
+  }
+  #portfolio{
+    margin-top: 2rem;
+  }
 }

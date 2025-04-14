@@ -1,43 +1,38 @@
 import React from 'react';
 import './about.css';
-import ME from '../../assets/imag/metwo.jpg';
-import { FaGithub } from 'react-icons/fa';
-import { BiUser } from 'react-icons/bi';
-import { HiOutlineFolderOpen } from 'react-icons/hi';
+import { HiOutlineAcademicCap } from "react-icons/hi2";
 
 const About = () => {
   return (
     <section id='about'>
-      <h5>Get to know</h5>
-      <h2>About Me</h2>
-      <div className="container about__container">
-        <div className="about__me">
-          <div className="about__me-image">
-            <img src={ME} alt="About image" />
-          </div>
+      <div className='about-title-container'>
+        <HiOutlineAcademicCap className='about-icon'/>
+        <h1>Academic Background</h1>
+      </div>
+      <hr />
+      <div className='about-content-container'>
+        <div className='about-content'>
+          <h4>
+          I'm a designer with a strong passion for UX/UI and frontend development. I enjoy crafting intuitive digital experiences that merge visual creativity with functional code. I believe in simplicity and minimalism as key principles to enhance usability and aesthetics. My background allows me to approach each project from both a user-centered and technical perspective.
+          </h4>
         </div>
-        <div className="about__content">
-          <div className="about__cards">
-            <article className='about__card'>
-              <FaGithub className='about__icon'/>
-              <h5>Service</h5>
-              <small></small>
-            </article>
-            <article className='about__card'>
-              <BiUser className='about__icon'/>
-              <h5>Clients</h5>
-              <small></small>
-            </article>
-            <article className='about__card'>
-              <HiOutlineFolderOpen className='about__icon'/>
-              <h5>Projects</h5>
-              <small></small>
-            </article>
+        <div className='academic-background-content'>
+          <div>
+            <h2>Bachelor Degree in Design</h2>
+            <h4>Torcuato Di Tella University</h4>
           </div>
-          <p className='info1'>
-            I'm a proactive, social person who likes to take on a challenge and is constantly looking for self-improvement. Having worked on both websites and mobile apps, I have a well-rounded understanding of design, user experience, and front-end development. I have a good understanding of how to combine the visual and the functional to give the user the best experience possible.
-          </p>
-          <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+          <hr />
+          <div className='course-pair'>
+            <div>
+              <h2>Front End Development</h2>
+              <h4>Coderhouse</h4>
+            </div>
+            <hr />
+            <div>
+              <h2>App Development</h2>
+              <h4>Coderhouse</h4>
+            </div>
+          </div>
         </div>
       </div>
     </section>

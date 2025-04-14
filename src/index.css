@@ -32,30 +32,30 @@ html{
 ::-webkit-scrollbar{
   display: none;
 }
-
-body{
-font-family: 'Lato', sans-serif;
-background:var(--color-bg);
-color: var(--color-white);
-line-height: 1.7;
-background: rgb(204, 203, 203);
-animation: color 12s ease-in-out infinite;
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--color-white);
+  line-height: 1.7;
+  background: linear-gradient(270deg, #14141d, #3e3e44, #1f1f38); /* mejor variación de tonos */
+  background-size: 100% 400%;
+  animation: color 12s ease-in-out infinite;
 }
-@keyframes color{
-  0%{
-    background-position: 0 50%;
+@keyframes color {
+  0% {
+    background-position: 0% 50%;
   }
-  50%{
+  50% {
     background-position: 100% 50%;
   }
-  100%{
-    background-position: 0 50%;
+  100% {
+    background-position: 0% 10%;
   }
 }
 /*================ Genera; Style ================== */
 .container{
   width: var(--container-width-lg);
   margin: 0 auto;
+  margin-top: 2rem;
 }
 
 h1,
@@ -63,23 +63,22 @@ h2,
 h2,
 h4
 h5 {
-  font-weight: 500;
+  font-weight: 100;
 }
 
 h1{
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
-
 section{
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 section > h2, section > h5{
 text-align: center;
-color: black;
+color: rgb(255, 255, 255);
 }
 
 section > h2{
-color: black;
+color: rgb(255, 255, 255);
 margin-bottom: 3rem;
 }
 
