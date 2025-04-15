@@ -18,14 +18,14 @@ const Portfolio = () => {
     {
       id: 1,
       img: IMG1,
-      title: 'BCH Arquitectura(Client)',
+      title: 'BCH Arquitectura',
       info: 'Fully responsive website for BCH Arquitectura bt leveraging my design expertise, This collaborative process between the client and myself was both challenging and rewarding as we worked together to ensure the final outcome aligned with their ides and need',
       link: 'https://www.bcharquitectura.com.ar/'
     },
     {
       id: 3,
       img: IMG3,
-      title: 'Organi App(UXUI)',
+      title: 'Organi App',
       info: 'Organi an app to organize household chores in an orderly and effective manner. The application was developed using Figma, where through prototypes and iterations we reached this final version of the app. ',
       behance: 'https://www.behance.net/gallery/159935735/Organi',
       demo: 'https://www.figma.com/proto/vFxzEVRYbqUjC0t4S2EojN/Untitled?...'
@@ -33,14 +33,14 @@ const Portfolio = () => {
     {
       id: 3,
       img: IMG10,
-      title: 'Formula 1 APP',
+      title: 'Formula 1 App',
       info: 'A Formula 1 app designed in Figma for the 2025 season, where you can view the race calendar, explore the teams and their lineups, and check last season’s results',
       link: 'https://www.figma.com/proto/uk5aak90ZNDAYhAij3yM1r/...'
     },
     {
       id: 2,
       img: IMG2,
-      title: 'Hoops World(React Ecommerce)',
+      title: 'Hoops World',
       info: 'Personal proyect where i created and e-commerce platform. This involved developing a fully responsive website featuring a product catalog with filters for both category and price',
       link: 'https://hoops-world.vercel.app/'
     },

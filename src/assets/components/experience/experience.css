@@ -1,6 +1,11 @@
 .experience {
-  margin-top: 10rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center;     /* Centra horizontalmente */
   text-align: center;
+  padding: 2rem;
 }
 
 .experience__title_container {
@@ -25,8 +30,9 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-bottom: 2rem;
   padding: 0 2rem;
+  width: 100%;
+  max-width: 900px;
 }
 
 .icons-container {
@@ -72,8 +78,8 @@
 
 /* ============ Responsive (Tablets) ============ */
 @media screen and (max-width: 768px) {
-  .experience__title_container {
-    flex-direction: row;
+  .experience svg {
+    font-size: 1.8rem;
   }
 
   .icons-container {
@@ -85,18 +91,15 @@
   }
 
   .experience-icon {
-      width: 70px;
-      height: 70px;
-  }
-  .experience svg{
-    font-size: 1.8rem;
+    width: 70px;
+    height: 70px;
   }
 }
 
 /* ============ Responsive (Mobile) ============ */
 @media screen and (max-width: 480px) {
   .experience {
-    margin-top: 6rem;
+    padding: 2rem 1rem;
   }
 
   .icons-container {

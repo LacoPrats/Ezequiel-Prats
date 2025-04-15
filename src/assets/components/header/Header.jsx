@@ -1,6 +1,5 @@
 import React from 'react';
 import './header.css';
-import CTA from './CTA';
 import ME from '../../assets/imag/perfil.jpg';
 import Headersocials from './Headersocials';
 
@@ -16,7 +15,9 @@ const Header = () => {
           <h5 className="text-light">Front End Developer</h5>
           <h5 className="text-light">UX UI Designer</h5>
           </div>
-          <CTA />
+          <div className='header-contact-container'>
+          <a href="#contact" className='btn btn-primary'>Contact</a>
+          </div>
           <Headersocials />
           <a href="#contact" className="scroll_down">Scroll Down</a>
         </div>

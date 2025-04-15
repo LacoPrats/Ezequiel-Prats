@@ -120,7 +120,6 @@ img{
   width: 100%;
   object-fit: cover;
 }
-
 /*================ Meedia Queries Medium ================== */
 @media screen and (max-width:1024px) {
   .container{

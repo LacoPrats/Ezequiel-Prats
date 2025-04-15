@@ -17,7 +17,7 @@ import ICON10 from "../../assets/imag/icons/github-sign.png";
 
 // Array de iconos para diseño
 const iconsdesign = [
-  { id: 1, src: ICON1, title: 'HTML' },
+  { id: 1, src: ICON1, title: 'Illustrator' },
   { id: 3, src: ICON3, title: 'Figma' },
   { id: 4, src: ICON4, title: 'Photoshop' },
   { id: 5, src: ICON5, title: 'After Effects' },
