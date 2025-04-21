@@ -1,23 +1,65 @@
+"use client"
+
 import React from 'react'
 import './navbar.css'
-import{AiFillHome} from 'react-icons/ai'
-import{AiOutlineUser} from 'react-icons/ai'
-import{BiBook} from 'react-icons/bi'
-import{RiServiceLine} from 'react-icons/ri'
-import{MdOutlineMessage} from 'react-icons/md'
-import { useState } from 'react'
-import { IoIosRocket } from "react-icons/io";
+import { motion } from 'framer-motion'
+import { Home, User, Layers, Mail } from 'lucide-react'
+
+const navLinks = [
+  { icon: <Home />, label: "Home", href: "#header" },
+  { icon: <User />, label: "About", href: "#about" },
+  { icon: <Layers />, label: "Projects", href: "#portfolio" },
+  { icon: <Mail />, label: "Contact", href: "#contact" }
+]
 
 const Navbar = () => {
-  const[activeNav, setActiveNav]= useState('#')
   return (
-   <nav>
-    <a href="#" onClick={()=>setActiveNav('#')} className={activeNav == '#' ? 'active' :''}><AiFillHome/></a>
-    <a href="#experience"onClick={()=>setActiveNav('#experience')} className={activeNav == '#experience' ? 'active' :''}><IoIosRocket/></a>
-    <a href="#about" onClick={()=>setActiveNav('#about')} className={activeNav == '#about' ? 'active' :''}><AiOutlineUser/></a>
-    <a href="#portfolio" onClick={()=>setActiveNav('#portfolio')} className={activeNav == '#portfolio' ? 'active' :''}><BiBook/></a>
-    <a href="#contact"onClick={()=>setActiveNav('#contact')} className={activeNav == '#contact' ? 'active' :''}><MdOutlineMessage/></a>
-   </nav>
+    <motion.nav
+      initial={{ y: -80, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ type: "spring", stiffness: 100, damping: 12 }}
+    >
+      <motion.div
+        className="logo"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.5 }}
+      >
+        <h3>
+          <span className="logo-e">E</span>
+          <span className="logo-p">P</span>
+        </h3>
+      </motion.div>
+
+      <motion.div
+        className="nav-links"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          visible: {
+            transition: {
+              staggerChildren: 0.15
+            }
+          }
+        }}
+      >
+        {navLinks.map((link, index) => (
+          <motion.a
+            key={index}
+            href={link.href}
+            whileHover={{ scale: 1.2, color: "#a855f7" }}
+            whileTap={{ scale: 0.95 }}
+            variants={{
+              hidden: { opacity: 0, y: -10 },
+              visible: { opacity: 1, y: 0 }
+            }}
+          >
+            {link.icon}
+            <span>{link.label}</span>
+          </motion.a>
+        ))}
+      </motion.div>
+    </motion.nav>
   )
 }
 

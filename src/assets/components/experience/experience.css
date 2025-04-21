@@ -1,122 +1,124 @@
 .experience {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centra verticalmente */
-  align-items: center;     /* Centra horizontalmente */
+  min-height: 100vh;
+  padding:1rem;
+  background: transparent;
   text-align: center;
-  padding: 2rem;
+}
+.experience__title_container h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 0;
+  text-decoration: underline;
+  text-decoration-color: #a855f7;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 7px;
 }
 
-.experience__title_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.experience svg {
-  font-size: 3rem;
-}
-
-.experience-container h1 {
-  text-align: center;
+.experience__title_container p {
+  color: #ccc;
   font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
-
-.experience-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 0 2rem;
-  width: 100%;
-  max-width: 900px;
-}
-
-.icons-container {
-  margin-top: 2rem;
+.experience-categories {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 2rem;
   flex-wrap: wrap;
+gap: 1rem;
+text-align: left;
+}
+
+.experience-category {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
+  padding: 2rem 2rem;
+  width: 100%;
+  max-width: 300px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.category-header {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+.category-header svg{
+font-size: 2rem;
+background-color: rgba(255, 255, 255, 0.04);
+border: 1px solid rgba(255, 255, 255, 0.08);
+color: #a855f7;
+}
+.iconTitle {
+  font-size: 2rem;
+  color: #a855f7;
+  margin-bottom: 0.5rem;
+}
+
+.experience-category h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.category-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .experience-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
-  width: 100px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.experience-item:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.experience-icon {
-  width: 80px;
-  height: 80px;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   transition: transform 0.3s ease;
 }
 
+.experience-item:hover {
+  transform: scale(1.05);
+  background-color: rgba(168, 85, 247, 0.1);
+}
+
+.experience-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
 .experience-item h4 {
-  font-size: 0.7rem;
-  margin-top: 10px;
-  color: #b4b4b4;
+  font-size: 0.95rem;
+  color: #e2e2e2;
+  margin: 0;
 }
-
-.experience-item h4:hover {
-  color: rgb(255, 255, 255);
+.experience-info{
+  max-width: 250px;
 }
-
-/* ============ Responsive (Tablets) ============ */
+/* Responsive */
 @media screen and (max-width: 768px) {
-  .experience svg {
-    font-size: 1.8rem;
+  .experience-categories {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .icons-container {
-    gap: 1.5rem;
+  .experience-category {
+    width: 90%;
   }
 
-  .experience-item {
-    width: 90px;
-  }
-
-  .experience-icon {
-    width: 70px;
-    height: 70px;
-  }
-}
-
-/* ============ Responsive (Mobile) ============ */
-@media screen and (max-width: 480px) {
-  .experience {
-    padding: 2rem 1rem;
-  }
-
-  .icons-container {
-    gap: 1.2rem;
-  }
-
-  .experience-item {
-    width: 80px;
-    padding: 0.5rem;
-  }
-
-  .experience-icon {
-    width: 60px;
-    height: 60px;
-  }
-
-  .experience-item h4 {
-    font-size: 0.65rem;
+  .category-icons {
+    justify-content: center;
   }
 }

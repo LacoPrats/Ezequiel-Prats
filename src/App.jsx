@@ -7,6 +7,7 @@ import Experience from './assets/components/experience/Experience'
 import Portfolio from './assets/components/portfolio/Portfolio'
 import About from './assets/components/about/About'
 import Academic from './assets/components/Academic/Academic'
+import HeaderContact from './assets/components/Headercontact/Headercontact'
 
 const App = () => {
   return (
