@@ -12,20 +12,14 @@
 
 .academic-title-container h1 {
   font-size: 2.5rem;
-  font-weight: 700;
-  position: relative;
-  margin-bottom: 0.5rem;
+  color: #fff;
+  margin-bottom: 0;
+  text-decoration: underline;
+  text-decoration-color: #a855f7;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 7px;
 }
 
-.academic-title-container h1::after {
-  content: '';
-  display: block;
-  width: 70px;
-  height: 3px;
-  background-color: #a855f7;
-  margin: 0.5rem auto 0;
-  border-radius: 2px;
-}
 
 .academic-subtitle {
   color: #bbb;

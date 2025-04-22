@@ -72,6 +72,12 @@ h1{
 section{
   margin-top: 6rem;
 }
+#about,
+#portfolio,
+#experience,
+#contact {
+  scroll-margin-top: 200px; /* ajustalo al tamaño del navbar */
+}
 section > h2, section > h5{
 text-align: center;
 color: rgb(255, 255, 255);
