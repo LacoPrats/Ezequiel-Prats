@@ -73,7 +73,10 @@ const Header = () => {
           </motion.p>
 
           <motion.div className='header-contact-container' variants={fadeUp} transition={{ delay: 0.8 }}>
-            <a href="#contact" className='btn btn-primary'>Contact</a>
+            <div className='header__buttons'>
+            <a href="#contact" className='btn btn-secondary'>Contact</a>
+            <a href="#portfolio" className='btn btn-primary'>View Projects</a>
+            </div>
             <div><Headersocials /></div>
           </motion.div>
         </motion.div>

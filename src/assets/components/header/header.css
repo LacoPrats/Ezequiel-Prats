@@ -27,7 +27,6 @@ header {
 }
 
 .header__text {
-  text-align: left;
   color: white;
   flex: 1;
   display: flex;
@@ -44,7 +43,7 @@ header {
 }
 
 .header__text h1 {
-  font-size: 5rem;
+  font-size: 4.5vw;
   font-weight: 700;
   margin: 0;
   position: relative;
@@ -56,7 +55,6 @@ header {
 
 .header__titles {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
   margin: 0;
@@ -87,6 +85,9 @@ header {
 .btn {
   margin-top: 0.8rem;
 }
+.btn-secondary {
+  background-color: transparent;
+}
 
 /* ===================== IMAGE ===================== */
 .header__image {
@@ -109,13 +110,19 @@ header {
   transform: scale(1.05);
 }
 
-/* ===================== SOCIALS ===================== */
+.header__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
 .header_socials {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 0.8rem;
   font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
 /* ===================== SCROLL DOWN ===================== */
@@ -126,6 +133,25 @@ header {
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
+}
+
+/* ===================== MEDIA QUERIES - BETWEEN DESKTOP & TABLET ===================== */
+@media screen and (max-width: 1260px) {
+  .header__text h1 {
+    font-size: 3.5rem;
+  }
+
+  .header__titles h5 {
+    font-size: 1.4rem;
+  }
+
+  .header__text p {
+    font-size: 0.95rem;
+  }
+
+  .header__image {
+    max-width: 30%;
+  }
 }
 
 /* ===================== MEDIA QUERIES - TABLET ===================== */
@@ -171,10 +197,6 @@ header {
 
 /* ===================== MEDIA QUERIES - MOBILE ===================== */
 @media screen and (max-width: 600px) {
-  .header__container {
-    padding: 2rem 1rem;
-  }
-
   .header__text h1 {
     font-size: 2.2rem;
   }
@@ -185,7 +207,8 @@ header {
 
   .header__text p {
     font-size: 0.85rem;
-    padding: 0 1rem;
+    text-align: center;
+    max-width: 700px;
   }
 
   .btn {

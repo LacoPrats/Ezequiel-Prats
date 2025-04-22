@@ -102,17 +102,28 @@ a:hover{
   border-radius:0.2rem;
   cursor: pointer;
   transition: var(--transition);
+  background:  #a855f7;;
+  transition: transform 0.3s ease;
 }
 .btn:hover{
-  background: var(--color-white);
-  color:var(--color-bg);
+  transform: scale(1.05);
+}
+.btn:hover{
+  background:  #b874f8;;
+  color:whitesmoke;
   border-color:transparent
 }
 
 .btn-primary{
-  background: #a855f7;;
+  background: #a855f7;
   color:white
 }
+.btn-secondary{
+  color:white;
+  background-color: rgba(41, 40, 40, 0.679);
+  border: 1px solid rgba(166, 0, 255, 0.629);
+}
+
 
 img{
   display: block;

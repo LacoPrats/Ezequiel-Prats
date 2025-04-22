@@ -1,50 +1,79 @@
-/* Portfolio CSS */
 .portfolio__container {
   display: grid;
-  grid-template-columns: 1fr; /* Establecer una sola columna */
-  gap: 3rem;
-  text-align: center;
-  width: 50%;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2rem;
   margin-top: 2rem;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+.portfolio__title_container h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 0;
+  text-decoration: underline;
+  text-decoration-color: #a855f7;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 7px;
+}
+  
+.portfolio__title_container p{
+    color: #ccc;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.portfolio__item {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+.portfolio__technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.portfolio__item {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(rgb(0, 0, 0), rgb(41, 41, 41));
-  transition: var(--transition);
-  box-shadow: 
-    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: row;
-  padding: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 1rem;
+.portfolio__tech-tag {
+  background-color: rgba(168, 85, 247, 0.1);
+  color: #a855f7;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  border: 1px solid #a855f7;
 }
 
 .portfolio__item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
 }
 
-/* ✅ Estilo para las imágenes */
 .portfolio__item-image {
-  width: 700px;/* Ancho fijo */
-  height: auto;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius:0;
 }
 
 .portfolio__item-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Mantiene proporciones sin deformar */
-  border-radius: 8px;
+  object-fit: cover;
+  border-radius: 0;
 }
-
 .portfolio__item-content {
   display: flex;
   flex-direction: column;
@@ -56,7 +85,7 @@
 
 .portfolio__item h3 {
   margin: 1.2rem 0 1rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   width: 100%;
 }
 
@@ -83,58 +112,17 @@
 a.btn:hover .link-icon {
   transform: translateX(2px);
 }
-.btn {
-  background-color: rgb(76, 76, 76);
+.btn-primary {
+  background-color: #a855f7;;
 }
 #portfolio{
   margin-top: 12rem;
   text-align: center;
 }
-
-@media screen and (min-width: 601px) and (max-width: 1100px) {
-  .portfolio__container {
-    width: 90%;
-    gap: 2rem;
-  }
-
-  .portfolio__item {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .portfolio__item-image {
-    width: 100%;
-    height: 250px;
-    margin-bottom: 1rem;
-  }
-
-  .portfolio__item-content {
-    text-align: left;
-    padding: 0.5rem;
-  }
-
-  .portfolio__item h3 {
-    font-size: 1.3rem;
-    margin: 1rem 0;
-  }
-
-  .portfolio__item p {
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
-  }
-
-  .portfolio__item-cta {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .btn {
-    font-size: 0.9rem;
-    padding: 0.6rem 1rem;
-  }
-  #portfolio{
-    margin-top: 2rem;
-  }
+.btn-secondary{
+  color:white;
+  background-color: rgba(27, 27, 27, 0.896);
+  border: 1px solid rgba(166, 0, 255, 0.629);
 }
 
 @media screen and (max-width: 600px) {

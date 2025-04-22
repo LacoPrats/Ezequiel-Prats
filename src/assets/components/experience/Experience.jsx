@@ -31,7 +31,7 @@ const categories = [
 
 const Experience = () => {
   return (
-    <section className="experience">
+    <section id='experience' className="experience">
    <motion.div
   className="experience__title_container"
   initial={{ opacity: 0, y: 30 }}

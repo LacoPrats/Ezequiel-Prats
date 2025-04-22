@@ -7,19 +7,19 @@ const programs = [
     title: "Bachelor Degree in Design",
     place: "Torcuato Di Tella University",
     years: "2019 - 2024",
-    description: "Formación técnica en fundamentos de programación, algoritmos y estructuras de datos.",
+    description: "A multidisciplinary program combining visual communication, interaction design, and creativity to develop strategic, user-centered solutions.",
   },
   {
     title: "Frontend Development",
     place: "CoderHouse",
     years: "2020 - 2021",
-    description: "Especialización en tecnologías frontend como React, JavaScript avanzado y diseño responsive.",
+    description: "Practical training in HTML, CSS, JavaScript, and React, with focus on responsive design and building dynamic interfaces.",
   },
   {
     title: "App Development",
     place: "Coderhouse",
     years: "2023",
-    description: "Formación completa en desarrollo web, incluyendo backend con Node.js, Express y bases de datos.",
+    description: "Intro to mobile development using React Native, teaching how to design and build cross-platform apps with strong UX foundations.",
   },
 ];
 
@@ -35,7 +35,7 @@ const Academic = () => {
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.6 }}
       >
-        <h1>Educación</h1>
+        <h1>Education</h1>
         <p className="academic-subtitle">
           Mi formación académica y cursos especializados que han fortalecido mis habilidades técnicas y creativas.
         </p>
