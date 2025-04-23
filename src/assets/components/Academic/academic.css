@@ -97,13 +97,15 @@
   }
 
   .academic-content-block h2 {
-    font-size: 1.15rem;
+    font-size: 1rem;
   }
 
   .academic-meta h4,
   .academic-years,
   .academic-content-block p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+    text-align: justify;
+   
   }
 
   .academic-title-container h1 {
@@ -111,6 +113,6 @@
   }
 
   .academic-subtitle {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 }
