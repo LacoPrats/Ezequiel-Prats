@@ -40,6 +40,22 @@ const projects = [
     technologies: ['Figma','Redesign']
   },
   {
+    id: 9,
+    img: IMG6,
+    title: 'News Api',
+    info: 'A news site where I practiced working with APIs and displaying dynamic data. Users can view real-time news and filter articles by category in a clean and responsive layout.',
+    github: 'https://github.com/LacoPrats/Api-news',
+    technologies: ['CSS Grid', 'React','Api']
+  },
+  {
+    id: 6,
+    img: IMG5,
+    title: 'Punto y Coma Branding',
+    info: 'Punto y Coma was a final project developed for a typographic event held at the National Library of Buenos Aires. We designed the entire visual identity from scratch, using ASCII art as a conceptual and aesthetic foundation.',
+    behance: 'https://www.behance.net/gallery/162103830/Punto-y-Coma',
+    technologies: ['Illustrator', 'Branding']
+  },
+  {
     id: 2,
     img: IMG2,
     title: 'Hoops World',
@@ -56,28 +72,12 @@ const projects = [
     technologies: ['After Effect','Illustrator','Resoloume']
   },
   {
-    id: 6,
-    img: IMG5,
-    title: 'Punto y Coma Branding',
-    info: 'Punto y Coma was a final project developed for a typographic event held at the National Library of Buenos Aires. We designed the entire visual identity from scratch, using ASCII art as a conceptual and aesthetic foundation.',
-    behance: 'https://www.behance.net/gallery/162103830/Punto-y-Coma',
-    technologies: ['Illustrator', 'Branding']
-  },
-  {
     id: 8,
     img: IMG7,
     title: 'Ali Timeline',
     info: 'A timeline recounting Ali life and his battles both inside and outside the ring. This project was created in Illustrator and Figma to provide functionality',
     demo: 'https://www.figma.com/proto/vLabmKSgiqI7tf1JXFINGz/Alifinal?node-id=4-217&t=9koBURdw3uNc6EaP-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A217 ',
     technologies: ['Figma', 'Illustrator']
-  },
-  {
-    id: 9,
-    img: IMG6,
-    title: 'News Api',
-    info: 'A news site where I practiced working with APIs and displaying dynamic data. Users can view real-time news and filter articles by category in a clean and responsive layout.',
-    github: 'https://github.com/LacoPrats/Api-news',
-    technologies: ['CSS Grid', 'React','Api']
   },
   {
     id: 10,
