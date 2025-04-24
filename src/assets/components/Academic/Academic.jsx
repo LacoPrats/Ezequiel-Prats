@@ -37,7 +37,7 @@ const Academic = () => {
       >
         <h1>Education</h1>
         <p className="academic-subtitle">
-          Mi formación académica y cursos especializados que han fortalecido mis habilidades técnicas y creativas.
+        My academic background and specialized courses have strengthened both my technical and creative skills.
         </p>
       </motion.div>
 

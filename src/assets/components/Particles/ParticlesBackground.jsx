@@ -1,16 +1,11 @@
-import { useCallback } from "react";
+import React from "react";
 import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
 
-export default function ParticlesBackground() {
-  const particlesInit = useCallback(async engine => {
-    await loadFull(engine);
-  }, []);
-
+const ParticlesBackground = () => {
   return (
     <Particles
       id="tsparticles"
-      init={particlesInit}
+      className="particles-canvas"
       options={{
         fullScreen: { enable: false },
         background: { color: { value: "transparent" } },
@@ -32,4 +27,6 @@ export default function ParticlesBackground() {
       }}
     />
   );
-}
+};
+
+export default ParticlesBackground;
