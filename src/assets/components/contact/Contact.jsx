@@ -33,12 +33,12 @@ const Contact = () => {
     },
     {
       icon: <FiPhone className="contact-icon" />,
-      title: "Teléfono",
+      title: "Phone",
       text: "+54 115 720 7088",
     },
     {
       icon: <MdLocationOn className="contact-icon" />,
-      title: "Ubicación",
+      title: "Location",
       text: "Buenos Aires, Argentina",
     },
   ];
@@ -52,7 +52,7 @@ const Contact = () => {
       >
         <h1 className="contact__title">Contacto</h1>
         <p>
-          ¿Tienes un proyecto en mente? ¡Hablemos! Estoy disponible para trabajar en nuevos proyectos y colaboraciones.
+        Got a project in mind? Let’s talk! I’m available for new projects and collaborations.
         </p>
       </motion.div>
 
