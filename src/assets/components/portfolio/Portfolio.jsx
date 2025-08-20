@@ -8,7 +8,7 @@ import IMG4 from '../../assets/imag/astronaut.png'
 import IMG5 from '../../assets/imag/puntoycoma.png'
 import IMG6 from '../../assets/imag/newsapi.png'
 import IMG7 from '../../assets/imag/Ali.png'
-import IMG8 from '../../assets/imag/nft.png'
+import IMG8 from '../../assets/imag/Smartbuy.png'
 import IMG9 from '../../assets/imag/Clima.jpeg'
 import IMG10 from '../../assets/imag/PRESENAPP.png'
 
@@ -25,7 +25,7 @@ const projects = [
   {
     id: 3,
     img: IMG3,
-    title: 'Organi App',
+    title: 'Smart Buy',
     info: 'Organize household chores efficiently. Built in Figma with prototypes and user-centric iterations.',
     behance: 'https://www.behance.net/gallery/159935735/Organi',
     demo: 'https://www.figma.com/proto/vFxzEVRYbqUjC0t4S2EojN/Untitled?node-id=305-257&starting-point-node-id=302%3A159',
@@ -33,20 +33,22 @@ const projects = [
   },
   {
     id: 4,
+    img: IMG8,
+    title: 'Smart Buy',
+    info: 'Development of a modern and clean site that reflects their identity and clearly communicates their services and value.',
+    link: 'https://smartbuyconsulting.com/',
+    technologies: ['Next Js','Tailwind']
+  },
+    {
+    id: 4,
     img: IMG10,
     title: 'Formula 1 App',
     info: 'Figma prototype for the 2025 F1 season. View races, teams, and results.',
     demo: 'https://www.figma.com/proto/uk5aak90ZNDAYhAij3yM1r/Formula-1-App?page-id=0%3A1&node-id=1-3',
     technologies: ['Figma','Redesign']
   },
-  {
-    id: 9,
-    img: IMG6,
-    title: 'News Api',
-    info: 'A news site where I practiced working with APIs and displaying dynamic data. Users can view real-time news and filter articles by category in a clean and responsive layout.',
-    github: 'https://github.com/LacoPrats/Api-news',
-    technologies: ['CSS Grid', 'React','Api']
-  },
+
+
   {
     id: 6,
     img: IMG5,
