@@ -60,7 +60,7 @@ const Header = () => {
             variants={fadeUp}
             transition={{ delay: 0.4 }}
           >
-            <h5>Front End Developer & UX UI Designer</h5>
+            <h5>UX/UI Designer (with Front-End skills)</h5>
           </motion.div>
 
           <motion.p
