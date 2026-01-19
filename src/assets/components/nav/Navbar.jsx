@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
-import CV from '../header/Prats-EnglishCV.pdf';
+import CV from '../header/CV_EzequielPrats.English.pdf';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
 
         <a 
           href={CV}
-          download="Ezequiel_Prats_CV.pdf"
+          download="CV_EzequielPrats.English.pdf"
           className="cv-download-btn"
         >
           Download CV
@@ -43,7 +43,7 @@ const Navbar = () => {
           <a href="#contact">Contact</a>
           <a 
             href={CV}
-            download="Ezequiel_Prats_CV.pdf"
+            download="CV_EzequielPrats.English.pdf"
             className="cv-download-btn"
           >
             Download CV
