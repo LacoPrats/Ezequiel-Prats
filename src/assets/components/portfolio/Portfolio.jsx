@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './portfolio.css'
-import { IoIosLink } from "react-icons/io"
+import { IoIosLink } from 'react-icons/io'
 
 import IMG1 from '../../assets/imag/bcharq.png'
 import IMG2 from '../../assets/imag/hoopsworlds2.png'
@@ -11,211 +11,209 @@ import IMG7 from '../../assets/imag/Ali.png'
 import IMG8 from '../../assets/imag/SmartB.png'
 import IMG9 from '../../assets/imag/Clima.jpeg'
 import IMG10 from '../../assets/imag/PRESENAPP.png'
+import IMG_AIUxAudit from '../../assets/imag/UXUI.png'
 
-const featuredProjects = [
-  {
-    id: 1,
-    img: IMG8,
-    title: 'SmartBuy Consulting',
-    info: 'UI/UX + Frontend. End-to-end website with information architecture, a clean visual system, and responsive implementation.',
-    link: 'https://smartbuyconsulting.com/',
-    technologies: ['UI/UX', 'Information Architecture', 'Next.js', 'Tailwind'],
-    scope: 'IA & structure · Responsive UI · Component system · Deployment',
-    outcome: 'Launched a responsive site that clarifies services and strengthens brand credibility for lead generation.',
+const heroProjects = [
+    {
+    id: 'hero-aiux',
+    image: IMG_AIUxAudit,
+    title: 'AI UX Audit',
+    subtitle: 'UX + AI Concept',
+    description:
+      'AI-powered tool that evaluates UI screenshots and returns prioritized UX improvements based on heuristics, impact, and effort.',
+    scope: 'UX audit flow · Findings system · Prioritization model',
+    outcome:
+      'Turns heuristic evaluation into clear, actionable recommendations in seconds.',
+    tags: ['UX', 'AI', 'Product Design'],
+    live: 'https://v0-ai-ux-audit.vercel.app/',
+    case: null,
+    imageFit: 'contain',
   },
   {
-    id: 2,
-    img: IMG1,
+    id: 'hero-bch',
+    image: IMG1,
     title: 'BCH Arquitectura',
-    info: 'Website design and development for an architecture studio, aligned with its visual identity and focused on showcasing projects with clarity.',
-    link: 'https://www.bcharquitectura.com.ar/',
-    technologies: ['UI Design', 'Responsive', 'React', 'Figma'],
+    subtitle: 'UI/UX + Frontend',
+    description:
+      'Portfolio website design and development for an architecture studio, focused on visual hierarchy, project clarity, and a clean responsive system.',
+    scope: 'UI redesign · Layout hierarchy · Responsive implementation',
+    outcome:
+      'Delivered a stronger digital presence that showcases projects with clarity and structure.',
+    tags: ['UI Design', 'React', 'Figma'],
+    live: 'https://www.bcharquitectura.com.ar/',
+    case: null,
+    imageFit: 'contain',
   },
+
   {
-    id: 3,
-    img: IMG10,
-    title: 'Mobile UI Prototype (Figma)',
-    info: 'Mobile prototype with key screens and flows, focused on visual hierarchy, navigation patterns, and component consistency.',
-    demo: 'https://www.figma.com/proto/uk5aak90ZNDAYhAij3yM1r/Formula-1-App?page-id=0%3A1&node-id=1-3',
-    technologies: ['Figma', 'UX Flows', 'Prototyping'],
+    id: 'feat-smartbuy',
+    image: IMG8,
+    title: 'SmartBuy Consulting',
+    subtitle: 'UI/UX + Frontend',
+    description:
+      'End-to-end marketing site: information architecture, clean visual system, and responsive components to improve credibility and lead generation.',
+    scope: 'IA & structure · Responsive UI · Component system · Deployment',
+    outcome:
+      'Launched a responsive site that clarifies services and strengthens brand credibility.',
+    tags: ['UI/UX', 'Information Architecture', 'Next.js', 'Tailwind'],
+    live: 'https://smartbuyconsulting.com/',
+    case: null,
+    imageFit: 'contain',
   },
 ]
 
 const otherProjects = [
   {
-    id: 10,
-    img: IMG3,
-    title: 'Organi (Figma)',
-    info: 'Concept to organize household tasks. User-centered prototypes and iterations.',
-    behance: 'https://www.behance.net/gallery/159935735/Organi',
-    demo: 'https://www.figma.com/proto/vFxzEVRYbqUjC0t4S2EojN/Untitled?node-id=305-257&starting-point-node-id=302%3A159',
-    technologies: ['Figma', 'UX', 'Prototyping'],
+    id: 'feat-mobile',
+    image: IMG10,
+    title: 'Mobile UI Prototype',
+    subtitle: 'Figma Prototype',
+    description:
+      'Mobile prototype focused on key screens and flows, emphasizing hierarchy, navigation patterns, and component consistency.',
+    tags: ['Figma', 'UX Flows', 'Prototyping'],
+    live: 'https://www.figma.com/proto/uk5aak90ZNDAYhAij3yM1r/Formula-1-App?page-id=0%3A1&node-id=1-3',
+    case: null,
+    imageFit: 'cover',
   },
   {
-    id: 11,
-    img: IMG5,
-    title: 'Punto y Coma (Branding)',
-    info: 'Final project for a typographic event at Biblioteca Nacional. Visual identity based on ASCII art.',
-    behance: 'https://www.behance.net/gallery/162103830/Punto-y-Coma',
-    technologies: ['Illustrator', 'Branding'],
+    id: 'organi',
+    image: IMG3,
+    title: 'Organi',
+    subtitle: 'UX Concept (Figma)',
+    description:
+      'Concept to organize household tasks. User-centered prototypes and iterations.',
+    tags: ['Figma', 'UX', 'Prototyping'],
+    live: 'https://www.figma.com/proto/vFxzEVRYbqUjC0t4S2EojN/Untitled?node-id=305-257&starting-point-node-id=302%3A159',
+    case: 'https://www.behance.net/gallery/159935735/Organi',
+    imageFit: 'cover',
   },
   {
-    id: 12,
-    img: IMG2,
+    id: 'puntoycoma',
+    image: IMG5,
+    title: 'Punto y Coma',
+    subtitle: 'Branding',
+    description:
+      'Visual identity for a typographic event at Biblioteca Nacional, inspired by ASCII art.',
+    tags: ['Illustrator', 'Branding'],
+    live: 'https://www.behance.net/gallery/162103830/Punto-y-Coma',
+    case: null,
+    imageFit: 'cover',
+  },
+  {
+    id: 'hoops',
+    image: IMG2,
     title: 'Hoops World',
-    info: 'Personal e-commerce with catalog and filters by category and price.',
-    link: 'https://hoops-world.vercel.app/',
-    technologies: ['React', 'Tailwind', 'Vite'],
+    subtitle: 'E-commerce',
+    description:
+      'Personal e-commerce with catalog and filters by category and price.',
+    tags: ['React', 'Tailwind', 'Vite'],
+    live: 'https://hoops-world.vercel.app/',
+    case: null,
+    imageFit: 'cover',
   },
   {
-    id: 13,
-    img: IMG4,
+    id: 'astronaut',
+    image: IMG4,
     title: 'Astronaut 8Bit Landing',
-    info: 'Audiovisual project with 8-bit aesthetics and rhythm-driven narrative. After Effects + Resolume.',
-    youtube: 'https://www.youtube.com/watch?v=pVh4dL0rCSA',
-    technologies: ['After Effects', 'Illustrator', 'Resolume'],
+    subtitle: 'Motion / Audiovisual',
+    description:
+      '8-bit aesthetic piece with rhythm-driven narrative. After Effects + Resolume.',
+    tags: ['After Effects', 'Illustrator', 'Resolume'],
+    live: 'https://www.youtube.com/watch?v=pVh4dL0rCSA',
+    case: null,
+    imageFit: 'cover',
   },
   {
-    id: 14,
-    img: IMG7,
-    title: 'Ali Timeline (Figma)',
-    info: 'Interactive timeline of Ali’s life. Design + functional prototype.',
-    demo: 'https://www.figma.com/proto/vLabmKSgiqI7tf1JXFINGz/Alifinal?node-id=4-217&t=9koBURdw3uNc6EaP-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A217',
-    technologies: ['Figma', 'Illustrator'],
+    id: 'ali',
+    image: IMG7,
+    title: 'Ali Timeline',
+    subtitle: 'Interactive Prototype (Figma)',
+    description:
+      'Interactive timeline of Ali’s life. Design + functional prototype.',
+    tags: ['Figma', 'Illustrator'],
+    live: 'https://www.figma.com/proto/vLabmKSgiqI7tf1JXFINGz/Alifinal?node-id=4-217&t=9koBURdw3uNc6EaP-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A217',
+    case: null,
+    imageFit: 'contain',
   },
   {
-    id: 15,
-    img: IMG9,
+    id: 'clima',
+    image: IMG9,
     title: 'Clima en Movimiento',
-    info: 'Immersive installation about climate change through interactive projections.',
-    github: 'https://github.com/LacoPrats/weather-app',
-    technologies: ['TouchDesigner', 'After Effects'],
+    subtitle: 'Installation',
+    description:
+      'Immersive installation about climate change through interactive projections.',
+    tags: ['TouchDesigner', 'After Effects'],
+    live: 'https://github.com/LacoPrats/weather-app',
+    case: null,
+    imageFit: 'cover',
   },
 ]
 
-const ProjectCard = ({ project, variant }) => {
-  const { img, title, info, link, behance, demo, drive, github, technologies, youtube, scope, outcome } = project
+const ProjectCard = ({ project, variant = 'default' }) => {
+  const {
+    image,
+    title,
+    subtitle,
+    description,
+    scope,
+    outcome,
+    tags,
+    live,
+    case: caseStudy,
+    imageFit = 'cover',
+  } = project
 
-  // HERO layout (SmartBuy)
-// HERO layout (SmartBuy)
-if (variant === "hero") {
+  const isHero = variant === 'hero'
+
   return (
-    <article className="portfolio__item portfolio__item--hero">
-      {/* IZQUIERDA: Imagen */}
-      <div className="portfolio__item-image">
-        <img src={img} alt={title} />
+    <article className={`portfolio__item ${isHero ? 'portfolio__item--hero' : ''}`}>
+      <div className={`portfolio__item-image portfolio__item-image--${imageFit}`}>
+        <img src={image} alt={title} loading="lazy" />
       </div>
 
-      {/* DERECHA: Contenido */}
       <div className="portfolio__item-content">
-        <h3>{title}</h3>
-        <span className="portfolio__hero-subtitle">UI/UX + Frontend</span>
+        <div className="portfolio__item-top">
+          <h3>{title}</h3>
+          {subtitle && <span className="portfolio__subtitle">{subtitle}</span>}
+          <p>{description}</p>
 
-        <p>{info}</p>
-
-        {(scope || outcome) && (
-          <div className="portfolio__meta-card">
-            {scope && (
-              <div className="portfolio__meta-row">
-                <span className="portfolio__meta-label">Scope</span>
-                <span className="portfolio__meta-value">{scope}</span>
-              </div>
-            )}
-            {outcome && (
-              <div className="portfolio__meta-row">
-                <span className="portfolio__meta-label">Outcome</span>
-                <span className="portfolio__meta-value">{outcome}</span>
-              </div>
-            )}
-          </div>
-        )}
-
-        {technologies?.length > 0 && (
-          <div className="portfolio__technologies">
-            {technologies.map((tech, index) => (
-              <span key={index} className="portfolio__tech-tag">
-                {tech}
-              </span>
-            ))}
-          </div>
-        )}
-
-        <div className="portfolio__item-cta">
-          {link && (
-            <a
-              href={link}
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-primary"
-            >
-              Live site <IoIosLink className="link-icon" />
-            </a>
+          {(scope || outcome) && (
+            <div className="portfolio__meta-card">
+              {scope && (
+                <div className="portfolio__meta-row">
+                  <div className="portfolio__meta-label">Scope</div>
+                  <div className="portfolio__meta-value">{scope}</div>
+                </div>
+              )}
+              {outcome && (
+                <div className="portfolio__meta-row">
+                  <div className="portfolio__meta-label">Outcome</div>
+                  <div className="portfolio__meta-value">{outcome}</div>
+                </div>
+              )}
+            </div>
           )}
-          {demo && (
-            <a
-              href={demo}
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-primary"
-            >
-              Figma prototype <IoIosLink className="link-icon" />
-            </a>
+
+          {tags?.length > 0 && (
+            <div className="portfolio__technologies">
+              {tags.map((t) => (
+                <span key={t} className="portfolio__tech-tag">
+                  {t}
+                </span>
+              ))}
+            </div>
           )}
         </div>
-      </div>
-    </article>
-  )
-}
-
-
-  // DEFAULT cards
-  return (
-    <article className="portfolio__item">
-      <div className="portfolio__item-image">
-        <img src={img} alt={title} />
-      </div>
-
-      <div className="portfolio__item-content">
-        <h3>{title}</h3>
-        <p>{info}</p>
-
-        {technologies?.length > 0 && (
-          <div className="portfolio__technologies">
-            {technologies.map((tech, index) => (
-              <span key={index} className="portfolio__tech-tag">{tech}</span>
-            ))}
-          </div>
-        )}
 
         <div className="portfolio__item-cta">
-          {link && (
-            <a href={link} target="_blank" rel="noreferrer" className='btn btn-primary'>
+          {live && (
+            <a className="btn btn-primary" href={live} target="_blank" rel="noreferrer">
               Live site <IoIosLink className="link-icon" />
             </a>
           )}
-          {demo && (
-            <a href={demo} target="_blank" rel="noreferrer" className='btn btn-primary'>
-              Figma prototype <IoIosLink className="link-icon" />
-            </a>
-          )}
-          {behance && (
-            <a href={behance} target="_blank" rel="noreferrer" className='btn btn-secondary'>
-              Behance <IoIosLink className="link-icon" />
-            </a>
-          )}
-          {github && (
-            <a href={github} target="_blank" rel="noreferrer" className='btn btn-secondary'>
-              GitHub <IoIosLink className="link-icon" />
-            </a>
-          )}
-          {youtube && (
-            <a href={youtube} target="_blank" rel="noreferrer" className='btn btn-primary'>
-              Video <IoIosLink className="link-icon" />
-            </a>
-          )}
-          {drive && (
-            <a href={drive} target="_blank" rel="noreferrer" className='btn btn-secondary'>
-              Files <IoIosLink className="link-icon" />
+          {caseStudy && (
+            <a className="btn btn-secondary" href={caseStudy} target="_blank" rel="noreferrer">
+              Case study <IoIosLink className="link-icon" />
             </a>
           )}
         </div>
@@ -227,44 +225,33 @@ if (variant === "hero") {
 const Portfolio = () => {
   const [showAll, setShowAll] = useState(false)
 
-  const heroProject = featuredProjects[0]
-  const secondaryFeatured = featuredProjects.slice(1)
-
   return (
-    <section id='portfolio'>
-      <div className='portfolio__title_container'>
+    <section id="portfolio">
+      <div className="portfolio__title_container">
         <h1>Portfolio</h1>
         <p>Featured projects</p>
       </div>
 
-      {/* ✅ Removed global "container" class to avoid max-width cap from index.css */}
       <div className="portfolio__container">
-        {/* HERO FEATURED */}
-        <div className="portfolio__featured-hero">
-          <ProjectCard project={heroProject} variant="hero" />
-        </div>
-
-        {/* SECONDARY FEATURED */}
-        <div className="portfolio__featured-grid">
-          {secondaryFeatured.map((p) => (
-            <ProjectCard key={p.id} project={p} />
+        <div className="portfolio__hero-stack">
+          {heroProjects.map((p) => (
+            <ProjectCard key={p.id} project={p} variant="hero" />
           ))}
         </div>
       </div>
 
       <div className="portfolio__toggle">
-        <button className='btn btn-secondary' onClick={() => setShowAll(!showAll)}>
+        <button className="btn btn-secondary" onClick={() => setShowAll(!showAll)}>
           {showAll ? 'Show less' : 'View more projects'}
         </button>
       </div>
 
       {showAll && (
         <>
-          <div className='portfolio__title_container portfolio__title_container--secondary'>
+          <div className="portfolio__title_container portfolio__title_container--secondary">
             <p>Other work</p>
           </div>
 
-          {/* ✅ Removed global "container" here too */}
           <div className="portfolio__container">
             <div className="portfolio__other-grid">
               {otherProjects.map((p) => (
