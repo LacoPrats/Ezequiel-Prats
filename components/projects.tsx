@@ -37,7 +37,7 @@ const projects = [
     result: "From concept to deployed site in a single day",
     link: "#",
     categoryColor: "text-emerald-600",
-    image: "/images/projects/portfolio-me.png"
+    image: null
   }
 ]
 
