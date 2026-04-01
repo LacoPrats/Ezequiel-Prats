@@ -17,7 +17,7 @@ const projects = [
     title: "BCH Arquitectura",
     description: "End-to-end design and development of a portfolio site for an architecture studio — visual hierarchy, project clarity, and a clean responsive system.",
     result: "Delivered a digital presence that showcases work with structure and clarity",
-    link: "#",
+    link: "https://www.bcharquitectura.com.ar/",
     categoryColor: "text-primary",
     image: "/images/projects/bch-arquitectura.png"
   },
@@ -26,7 +26,7 @@ const projects = [
     title: "SmartBuy Consulting",
     description: "Full product design for a consulting marketing site — information architecture, visual system, and responsive components built to improve credibility and conversions.",
     result: "Launched a site that clarifies the offer and strengthens brand trust",
-    link: "#",
+    link: "https://smartbuyconsulting.com/",
     categoryColor: "text-primary",
     image: "/images/projects/smartbuy.png"
   },
@@ -35,7 +35,7 @@ const projects = [
     title: "This Portfolio",
     description: "Designed and built using AI-assisted workflows — from visual direction to code implementation. A real example of how I use AI tools to accelerate product design without losing craft.",
     result: "From concept to deployed site in a single day",
-    link: "#",
+    link: "https://ezequiel-prats-vc1e.vercel.app/",
     categoryColor: "text-emerald-600",
     image: "/images/projects/portfolio.png"
   }
